@@ -3,6 +3,7 @@ $bgColor: black;
 $bgColorOrange: orange;
 $blockWidth: 300px;
 $border: 4px solid rgb(0, 238, 255);
+$fontColor: green;
 *{
     background-color: grey;
     padding: 0;
@@ -15,13 +16,26 @@ $border: 4px solid rgb(0, 238, 255);
     border: $border;
     margin-bottom: 20px;
 } 
+@mixin font ($fontSize, $color){
+    font-size: $fontSize;
+    font-weight: bold;
+    color: $color;
+}
 .first {
-    background-color: $bgColor;
+    background-color: $bgColorOrange;
     height: 100px;
     width: $blockWidth;
     border: $border;
     margin-bottom: 20px;
+    ol{
+        background: $bgColorOrange;
+        li{
+            @include font(1.5em, purple);
+            background: $bgColorOrange;
+        }
+    }
 }
+
 #central_block{
     padding: 30px;
     ul{
@@ -42,4 +56,10 @@ $border: 4px solid rgb(0, 238, 255);
         background: $bgColorOrange;
         color: wheat;
     }
+}
+@mixin padd ($padd...){
+    padding: $padd;
+}
+#last_block{
+    @include padd(20px 30px 40px 50px)
 }
