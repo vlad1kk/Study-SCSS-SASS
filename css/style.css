@@ -1,5 +1,5 @@
 * {
-  background-color: green;
+  background-color: grey;
   padding: 0;
   margin: 0;
 }
@@ -18,4 +18,26 @@
   width: 300px;
   border: 4px solid rgb(0, 238, 255);
   margin-bottom: 20px;
+}
+
+#central_block {
+  padding: 30px;
+}
+#central_block ul {
+  background: orange;
+  list-style: none;
+  display: inline-block;
+}
+#central_block li {
+  background: orange;
+  float: left;
+  margin-right: 10px;
+}
+#central_block li a {
+  background: orange;
+  color: purple;
+}
+#central_block a {
+  background: orange;
+  color: wheat;
 }

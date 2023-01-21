@@ -1,9 +1,10 @@
 // comment
 $bgColor: black;
+$bgColorOrange: orange;
 $blockWidth: 300px;
 $border: 4px solid rgb(0, 238, 255);
 *{
-    background-color: green;
+    background-color: grey;
     padding: 0;
     margin: 0;
 }
@@ -20,4 +21,25 @@ $border: 4px solid rgb(0, 238, 255);
     width: $blockWidth;
     border: $border;
     margin-bottom: 20px;
+}
+#central_block{
+    padding: 30px;
+    ul{
+        background: $bgColorOrange;
+        list-style: none;
+        display: inline-block;
+    }
+    li{
+        background: $bgColorOrange;
+        float: left;
+        margin-right: 10px;
+        a{
+            background: $bgColorOrange;
+            color: purple;
+        }
+    }
+    a{
+        background: $bgColorOrange;
+        color: wheat;
+    }
 }
