@@ -12,6 +12,19 @@
   margin-bottom: 20px;
 }
 
+a {
+  color: black;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: blue;
+}
+a:visited {
+  color: green;
+}
+
 .first {
   background-color: orange;
   height: 100px;
@@ -45,6 +58,9 @@
 #central_block li a {
   background: orange;
   color: purple;
+}
+#central_block li a:hover {
+  color: red;
 }
 #central_block a {
   background: orange;

@@ -21,6 +21,21 @@ $fontColor: green;
     font-weight: bold;
     color: $color;
 }
+@mixin link ($link, $hover, $active, $visited){
+    color: $link;
+    &:hover{
+        color: $hover;
+    }
+    &:active{
+        color: $active;
+    }
+    &:visited{
+        color: $visited;
+    }
+}
+a{
+    @include link(black, red, blue, green)
+}
 .first {
     background-color: $bgColorOrange;
     height: 100px;
@@ -50,6 +65,9 @@ $fontColor: green;
         a{
             background: $bgColorOrange;
             color: purple;
+            &:hover{
+                color: red;
+            }
         }
     }
     a{
