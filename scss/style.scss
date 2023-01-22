@@ -1,9 +1,6 @@
 // comment
-$bgColor: black;
-$bgColorOrange: orange;
-$blockWidth: 300px;
-$border: 4px solid rgb(0, 238, 255);
-$fontColor: green;
+@import "variables";
+@import "mixins";
 *{
     background-color: grey;
     padding: 0;
@@ -16,23 +13,7 @@ $fontColor: green;
     border: $border;
     margin-bottom: 20px;
 } 
-@mixin font ($fontSize, $color){
-    font-size: $fontSize;
-    font-weight: bold;
-    color: $color;
-}
-@mixin link ($link, $hover, $active, $visited){
-    color: $link;
-    &:hover{
-        color: $hover;
-    }
-    &:active{
-        color: $active;
-    }
-    &:visited{
-        color: $visited;
-    }
-}
+
 a{
     @include link(black, red, blue, green)
 }
@@ -75,9 +56,7 @@ a{
         color: wheat;
     }
 }
-@mixin padd ($padd...){
-    padding: $padd;
-}
+
 #last_block{
     @include padd(20px 30px 40px 50px)
 }

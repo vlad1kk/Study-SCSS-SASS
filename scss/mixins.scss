@@ -1,0 +1,20 @@
+@mixin font ($fontSize, $color){
+    font-size: $fontSize;
+    font-weight: bold;
+    color: $color;
+}
+@mixin link ($link, $hover, $active, $visited){
+    color: $link;
+    &:hover{
+        color: $hover;
+    }
+    &:active{
+        color: $active;
+    }
+    &:visited{
+        color: $visited;
+    }
+}
+@mixin padd ($padd...){
+    padding: $padd;
+}
