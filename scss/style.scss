@@ -17,7 +17,7 @@
     float: left;
     width: 100%;
 
-    div {
+    > div {
         @include grid (4, 2%);
     }
 }

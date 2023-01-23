@@ -16,7 +16,7 @@
   float: left;
   width: 100%;
 }
-#grid div {
+#grid > div {
   float: left;
   background: brown;
   margin-right: 2%;
@@ -24,7 +24,7 @@
   height: 150px;
   width: 23.5%;
 }
-#grid div:nth-child(4n) {
+#grid > div:nth-child(4n) {
   margin-right: 0;
 }
 
