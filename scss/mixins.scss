@@ -1,8 +1,22 @@
+@mixin grid ($cols, $margin){
+    float: left;
+    background: brown;
+    margin-right: $margin;
+    margin-bottom: $margin;
+    height: 150px;
+    width: ((100% - (($cols - 1) * $margin)) / $cols);
+
+    &:nth-child(#{$cols}n){
+        margin-right: 0;
+    }
+}
+
 @mixin font ($fontSize, $color){
     font-size: $fontSize;
     font-weight: bold;
     color: $color;
 }
+
 @mixin link ($link, $hover, $active, $visited){
     color: $link;
     &:hover{
@@ -15,6 +29,7 @@
         color: $visited;
     }
 }
+
 @mixin padd ($padd...){
     padding: $padd;
 }

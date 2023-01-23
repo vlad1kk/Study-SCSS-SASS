@@ -13,6 +13,14 @@
     border: $border;
     margin-bottom: 20px;
 } 
+#grid {
+    float: left;
+    width: 100%;
+
+    div {
+        @include grid (4, 2%);
+    }
+}
 
 a{
     @include link(black, red, blue, green)
@@ -42,7 +50,8 @@ a{
     li{
         background: $bgColorOrange;
         float: left;
-        margin-right: 10px;
+        width: (100% / 4);
+        // margin-right: 10px;
         a{
             background: $bgColorOrange;
             color: purple;
