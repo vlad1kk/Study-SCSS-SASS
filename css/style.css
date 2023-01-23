@@ -29,10 +29,10 @@
 }
 
 a {
-  color: black;
+  color: silver;
 }
 a:hover {
-  color: red;
+  color: #8d8d8d;
 }
 a:active {
   color: blue;

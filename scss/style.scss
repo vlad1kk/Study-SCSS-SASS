@@ -23,7 +23,7 @@
 }
 
 a{
-    @include link(black, red, blue, green)
+    @include link(silver, red, blue, green)
 }
 .first {
     background-color: $bgColorOrange;
