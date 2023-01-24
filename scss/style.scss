@@ -22,6 +22,12 @@
     }
 }
 
+@for $i from 24 to 29{
+    .#{$someVar}-#{$i}{
+        width: 50px + $i;
+        height: 50px + $i;
+    }
+}
 a{
     @include link(silver, red, blue, green)
 }
