@@ -25,6 +25,7 @@
 }
 
 @mixin link ($link, $hover, $active, $visited){
+    a{
     color: $link;
     &:hover{
         color: darken($link, 20%);
@@ -32,8 +33,7 @@
     &:active{
         color: $active;
     }
-    &:visited{
-        color: $visited;
+    @content;
     }
 }
 

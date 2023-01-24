@@ -31,6 +31,14 @@
 a{
     @include link(silver, red, blue, green)
 }
+.header{
+    @include link(silver, red, blue, green){
+        background: black;
+        &:visited{
+            color: yellow;
+        }
+    }
+}
 .first {
     background-color: $bgColorOrange;
     height: 100px;

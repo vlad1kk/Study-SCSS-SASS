@@ -53,17 +53,28 @@
   height: 78px;
 }
 
-a {
+a a {
   color: silver;
 }
-a:hover {
+a a:hover {
   color: #8d8d8d;
 }
-a:active {
+a a:active {
   color: blue;
 }
-a:visited {
-  color: green;
+
+.header a {
+  color: silver;
+  background: black;
+}
+.header a:hover {
+  color: #8d8d8d;
+}
+.header a:active {
+  color: blue;
+}
+.header a:visited {
+  color: yellow;
 }
 
 .first {
